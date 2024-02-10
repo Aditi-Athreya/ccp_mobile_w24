@@ -31,6 +31,11 @@ body {
     background-color: #555;
   }
 
+  nav ul li a.active {
+    background-color: #333;
+    color: #fff;
+  }
+
   header {
     text-align: center;
     background-color: #f2f2f2;
