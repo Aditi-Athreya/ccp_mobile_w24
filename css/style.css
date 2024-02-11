@@ -4,27 +4,24 @@ body {
 
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 0;
+  left: -9999px;
+  top: auto;
+  width: 1px; 
+  height: 1px; 
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 10px;
+  top: 10px;
   background-color: #000;
   color: #fff;
   padding: 10px;
   z-index: 1000;
   text-decoration: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-.skip-link:focus {
-  top: 0;
-  opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .skip-link {
-      display: none;
-  }
-}
 
 
 
