@@ -3,25 +3,21 @@ body {
 }
 
 .skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px; 
-  height: 1px; 
-  overflow: hidden;
+  position: fixed;
+  left: -9999px; 
+  opacity: 0;
 }
 
 .skip-link:focus {
-  position: fixed;
-  left: 10px;
-  top: 10px;
+  position: static; 
+  left: auto;
+  opacity: 1;
   background-color: #000;
   color: #fff;
   padding: 10px;
   z-index: 1000;
   text-decoration: none;
 }
-
 
 
 
