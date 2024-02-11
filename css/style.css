@@ -2,6 +2,31 @@ body {
     background-color: white;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .skip-link {
+      display: none;
+  }
+}
+
+
 .navbar {
     background-color: lightseagreen;
     padding: 10px 0;
